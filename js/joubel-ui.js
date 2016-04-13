@@ -138,6 +138,9 @@ H5P.JoubelUI = (function ($) {
     else {
       params.class = 'h5p-joubelui-button';
     }
+    if (!params.tabindex) {
+      params.tabindex = '-1';
+    }
     return $('<' + type + '/>', params);
   };
 
